@@ -27,6 +27,14 @@
       #vector-types li {
           margin-bottom: 0.25em;
       }
+
+      #homo-hetero-ul li {
+          margin-bottom: -0.5em;
+      }
+
+      #homo-hetero-ul li .code-wrapper {
+          margin-top: 0;
+      }
     </style>
   </head>
   <body>
@@ -36,7 +44,7 @@
           <h1>Cours 2 &mdash; Fondations</h1>
           <h2>Patrick Fournier</h2>
           <h3>MAT8186 &mdash; Techniques avancées en programmation statistiques R</h3>
-          <h3>Automne 2022</h3>
+          <h3>Automne 2023</h3>
         </section>
         <section>
           <section class="title-slide">
@@ -313,14 +321,14 @@
           </section>
           <section>
             <h1>Listes</h1>
-            <ul>
-              <li class="no-after" style="margin-bottom:-1.75em;">Vecteurs: structures <em>homogènes</em>
+            <ul id="homo-hetero-ul">
+              <li class="no-after">Vecteurs: structures <em>homogènes</em>
                 <pre><code class="language-R hljs" style="font-size:30px;" data-trim data-noescape>
                     <span class="hljs-repl">r$&gt;</span> c(42, "quarante-deux")
                     [1] "42" "quarante-deux"
                 </code></pre>
               </li>
-              <li class="no-after" style="margin-bottom:-1.75em;">Listes: <em>hétérogènes</em>
+              <li class="no-after">Listes: <em>hétérogènes</em>
                 <pre><code class="language-R hljs" style="font-size:30px;" data-trim data-noescape>
                     <span class="hljs-repl">r$&gt;</span> list(42, "quarante-deux")
                     [[1]]
@@ -342,7 +350,7 @@
           <section>
             <h1>Sélection</h1>
             <ul>
-              <li class="no-after" style="margin-bottom:-1.75em;">Sous-vecteur: <code class="language-R hljs">[]</code>
+              <li class="no-after">Sous-vecteur: <code class="language-R hljs">[]</code>
                 <pre><code class="language-R hljs" style="font-size:35px;" data-trim data-noescape>
                     <span class="hljs-repl">r$&gt;</span> list("Je", "suis", 1, "liste")[3:4]
                     [[1]]
@@ -484,7 +492,7 @@
                 <ul>
                   <li>Normalement, chaque argument d'une fonction doit être fourni par l'utilisateur</li>
                   <li>Possible de spécifier des arguments <em>par défaut</em></li>
-                  <li>L&apos;utilisateur peut fournier ou pas un tel argument</li>
+                  <li>L&apos;utilisateur peut fournir ou pas un tel argument</li>
                 </ul>
               </div>
 
@@ -539,7 +547,7 @@
                 </code></pre>
               </div>
 
-              <div class="fragment fade-in obox" data-fragment-index="3">
+              <div class="fragment fade-in obox" style="max-width:110%;" data-fragment-index="3">
                 <pre><code class="language-R hljs" style="font-size:37px;" data-trim>
                   smallsum <- function(...) {
                       if (length(as.numeric(list(...))) > 5)
@@ -608,7 +616,7 @@
                 </ul>
               </div>
 
-              <div class="fragment fade-in obox" data-fragment-index="2">
+              <div class="fragment fade-in obox" style="max-width:110%;" data-fragment-index="2">
                 Exemple: Somme de la racine carrée des nombres
                 naturels inférieurs à 100 qui ne sont pas multiples de
                 3 ou 5.
@@ -632,7 +640,7 @@
         <span class="separator"></span>
         MAT8186
         <span class="separator"></span>
-        Automne 2022
+        Automne 2023
     </p></div>
 
     <div id="qrcode" alt="Slides"></div>
